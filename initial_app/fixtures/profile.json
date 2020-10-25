@@ -1,0 +1,58 @@
+[
+{
+	"model": "initial_app.profile",
+	"pk": 4,
+	"fields": {
+		"phone": "9012345678",
+		"address": "A chow G mala 304",
+		"name": "Ajay",
+		"emp_id": "01",
+		"timezone": "CINA",
+		"groups": [],
+		"user_permissions": [],
+		"activity_periods": [2]
+		}
+},
+{
+	"model": "initial_app.profile",
+	"pk": 5,
+	"fields": {
+		"phone": "9010345678",
+		"address": "A chow G mala 304",
+		"name": "Bhaiyaji",
+		"emp_id": "01",
+		"timezone": "CINA",
+		"groups": [],
+		"user_permissions": [],
+		"activity_periods": [1]
+		}
+},
+{
+	"model": "initial_app.profile",
+	"pk": 6,
+	"fields": {
+		"phone": "9012345678",
+		"address": "214 plot",
+		"name": "Aksa",
+		"emp_id": "01",
+		"timezone": "Asia/Kolkata",
+		"groups": [],
+		"user_permissions": [],
+		"activity_periods": [3]
+		}
+},
+{
+	"model": "initial_app.profile",
+	"pk": 7,
+	"fields": {
+		"phone": "9010345678",
+		"address": "Dummy aadreess",
+		"name": "Kiran",
+		"emp_id": "01",
+		"timezone": "Japan",
+		"groups": [],
+		"user_permissions": [],
+		"activity_periods": [4]
+		}
+}
+]

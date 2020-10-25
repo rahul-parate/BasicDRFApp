@@ -1,0 +1,62 @@
+[
+	{
+		"model": "auth.user",
+		"pk": 1,
+		"fields": {
+			"password": "rahul@123",
+			"last_login": null,
+			"is_superuser": false,
+			"username": "rahul@xyz.com",
+			"first_name": "",
+			"last_name": "",
+			"email": "rahul@xyz.com",
+			"is_staff": false,
+			"is_active": true,
+			"date_joined": "2020-10-17T15:56:29.241Z",
+			"groups": [],
+			"user_permissions": []
+		}
+	}, 
+	{
+		"model": "auth.user",
+		"pk": 2,
+		"fields": {
+			"password": "pbkdf2_sha256$150000$Amaklg3yDKmd$urZotsO4sxVan6i5MMktFdEkD6hBNR3Xjedkm0/9Te0=", "last_login": null, "is_superuser": true, "username": "rahul@abc.com", "first_name": "", "last_name": "", "email": "rahul@abc.com", "is_staff": false, "is_active": true, "date_joined": "2020-10-17T17:44:32.931Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 3, "fields": {"password": "pbkdf2_sha256$150000$LCpTzslz5a3i$vXosBsEAlB1zmZRjcBM+BTZIJBwAjfg4xhMplueLxho=", "last_login": "2020-10-17T17:50:31.915Z", "is_superuser": true, "username": "rahul123", "first_name": "", "last_name": "", "email": "rahul@123.com", "is_staff": true, "is_active": true, "date_joined": "2020-10-17T17:50:05.792Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 4, "fields": {"password": "rahul@123", "last_login": null, "is_superuser": false, "username": "abc@er.com", "first_name": "", "last_name": "", "email": "abc@er.com", "is_staff": false, "is_active": true, "date_joined": "2020-10-18T12:19:12Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 5, "fields": {"password": "rahul@123", "last_login": null, "is_superuser": false, "username": "Kc@er.com", "first_name": "", "last_name": "", "email": "Kc@er.com", "is_staff": false, "is_active": true, "date_joined": "2020-10-18T13:05:50Z", "groups": [], "user_permissions": []}
+	},
+	{
+		"model": "auth.user",
+		"pk": 6,
+		"fields": {
+			"password": "pbkdf2_sha256$150000$Amaklg3yDKmd$urZotsO4sxVan6i5MMktFdEkD6hBNR3Xjedkm0/9Te0=",
+			"last_login": null,
+			"is_superuser": false,
+			"username": "aksa@xyz.com",
+			"first_name": "",
+			"last_name": "",
+			"email": "aksa@xyz.com",
+			"is_staff": false,
+			"is_active": true,
+			"date_joined": "2020-10-17T15:56:29.241Z",
+			"groups": [],
+			"user_permissions": []
+		}
+	},
+	{
+		"model": "auth.user",
+		"pk": 7,
+		"fields": {
+			"password": "pbkdf2_sha256$150000$Amaklg3yDKmd$urZotsO4sxVan6i5MMktFdEkD6hBNR3Xjedkm0/9Te0=",
+			"last_login": null,
+			"is_superuser": false,
+			"username": "kailash@xyz.com",
+			"first_name": "",
+			"last_name": "",
+			"email": "kailash@xyz.com",
+			"is_staff": false,
+			"is_active": true,
+			"date_joined": "2020-10-17T15:56:29.241Z",
+			"groups": [],
+			"user_permissions": []
+		}
+	}
+]
