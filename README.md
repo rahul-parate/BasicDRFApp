@@ -1,6 +1,6 @@
-To populate database: python manage.py populate_data
+1. To populate database: python manage.py populate_data
 
-To access apis we need a token:
+2. To access apis we need a token:
 
 url : localhost:8000/api/token/
 method : POST
@@ -9,7 +9,7 @@ data : {
     "password": "welcome@123"
 }
 
-To get data:
+3. To get data:
 
 url: localhost:8000/getdata/
 method: GET
