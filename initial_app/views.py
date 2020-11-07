@@ -13,8 +13,13 @@ from rest_framework.response import Response
 from .models import Profile
 
 from .serializers import RegistrationSerializer
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.tokens import AccessToken, RefreshToken
 
 
+import logging
+
+logger = logging.getLogger(__name__)
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -27,6 +32,9 @@ class UserViewSet(viewsets.ModelViewSet):
 
 class Registration(APIView):
 
+    authentication_classes = []
+    permission_classes = []
+
     def post(self, request, *args, **kwargs):
 
         try:
@@ -36,6 +44,10 @@ class Registration(APIView):
                 created, profile_id, message = serializer.create(
                     validated_data=validated_data)
                 if created:
+                    tokenr = TokenObtainPairSerializer().\
+                    get_token(request.user)
+                    tokena = AccessToken().for_user(request.user)
+                    logged_in_user = User.objects.get(id=profile_id)
                     return Response(
                         {
                             'created': True,
@@ -43,6 +55,8 @@ class Registration(APIView):
                         },
                         status=status.HTTP_200_OK)
                 else:
+                    print(logger)
+                    logger.debug('Error')
                     return Response(
                         {
                             'message': message
@@ -54,6 +68,7 @@ class Registration(APIView):
 
         except Exception as e:
             print(e)
+            logger.errors(e)
             return Response(
                 {'message': 'Issue'},
                 status=status.HTTP_409_CONFLICT)
@@ -71,5 +86,6 @@ class Getdata(APIView):
                 {
                 'ok': True,
                 'members': serializer.data
-                }
+                },
+                status=status.HTTP_200_OK
             )
