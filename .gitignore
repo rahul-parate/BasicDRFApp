@@ -1,0 +1,8 @@
+*/migrations
+
+*/settings.py
+*/__pycache__
+
+*/*.pyc
+
+__pycache__
